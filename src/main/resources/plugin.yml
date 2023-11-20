@@ -1,0 +1,20 @@
+name: Spawn
+version: '${project.version}'
+main: de.lundlucenany9.spawn.Spawn
+api-version: '1.19'
+commands:
+  spawn:
+    description: Teleportiert dich zum Spawn.
+    usage: /spawn <Player>
+    permission: Spawn.spawn
+  setspawn:
+    description: Setzt den Spawn.
+    usage: /setspawn
+    permission: Spawn.setspawn
+permissions:
+  Spawn.spawn:
+    description: Permission für den spawn Befehl.
+    default: true
+  Spawn.setspawn:
+    description: Permission für den setspawn Befehl.
+    default: op
